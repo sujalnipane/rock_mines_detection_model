@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | Sonar Rock vs Mine Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <video autoplay muted loop class="bg-video">
+        <source src="/static/back.mp4" type="video/mp4">
+    </video>
+
+    <nav class="navbar">
+        <div class="nav-brand">🔊 Sonar Detector</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+        </div>
+    </nav>
+
+    <div class="container about-container">
+
+        <h2>About This Project</h2>
+        <p class="subtitle">Sonar-based Rock vs Mine Classification System</p>
+
+        <div class="about-section">
+            <h3>🎯 Overview</h3>
+            <p>
+                Ye project sonar signal data analyze karke predict karta hai ki underwater object
+                ek rock hai ya mine. UCI Sonar dataset use kiya gaya hai, jisme 60 frequency-based
+                features hote hain har sample ke liye.
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h3>🧠 Model Training</h3>
+            <p>
+                Model ko Google Colab par train kiya gaya hai using scikit-learn. Data preprocessing,
+                feature scaling, aur model evaluation Colab notebook mein perform kiya gaya, fir
+                trained model ko pickle file (.sav) ke form mein save kiya gaya.
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h3>⚙️ Tech Stack</h3>
+            <ul>
+                <li>Model Training: Google Colab, scikit-learn, pandas, numpy</li>
+                <li>Backend: Flask (Python)</li>
+                <li>Frontend: HTML, CSS, JavaScript</li>
+                <li>Deployment: Render</li>
+            </ul>
+        </div>
+
+        <div class="about-section">
+            <h3>🚀 Workflow</h3>
+            <p>
+                Dataset load → preprocessing → model training & evaluation (Colab) →
+                model export as pickle file → Flask app banaya jo model ko load karke
+                real-time predictions deta hai → frontend se user input leta hai →
+                Render par deploy kiya gaya final web app ke roop mein.
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h3>🔗 Links</h3>
+            <p>
+                <a href="https://github.com/your-username/your-repo" target="_blank">GitHub Repository</a>
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
