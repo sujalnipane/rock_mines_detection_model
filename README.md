@@ -15,4 +15,4 @@ Flask-based web app jo sonar signal data se predict karta hai ki underwater obje
 4. Render par deploy kiya gaya
 
 ## Live Demo
-[link yahan daalna deploy hone ke baad]
+[https://rock-mines-detection-model.onrender.com/]
